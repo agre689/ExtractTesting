@@ -1,0 +1,24 @@
+File naming format:
+
+date_name_MICLux_screeninground_extractname_organism_biologicalrep_timepoint.xls
+
+date: date the measurement was taken in YYYYMMDD format
+name: initials of the researcher
+MIClux: used to differentiate between different types of files if we have different types of test in the future
+screeninground: used to match extract plates with each other and control plates tested at the same time using the same culture
+extractname: the code for the extract tested
+organism: initials for the organism the extract is tested against.
+biologicalrep: the biological replicate number for a particular organism tested against a particular extract.
+timepoint: time of measurement in hours.
+.xls: default file extension for excel files from the Victor plate reader.
+
+Example: 20190313_AG_MICLux_6_MC10-174_MA_1_0.xls
+
+Control plates have CTRL in place of the extract name. In this case the biological replicate is the same as the screening round.
+
+Example: 20190313_AG_MICLux_6_CTRL_MA_6_0.xls
+
+Extract test plates should always have all 96 wells measured. If certain columns are empty (e.g. due to the extract running out) it can be noted and excluded from the final tidy data sheet and further analysis later on.
+These plates should always start at a concentration of 1 mg/mL, and have a doubling dilution for each subsequent row. The final row should contain no extract.
+
+Control plates should always have only 6 columns measured. These should be 2 columns of DMSO (starting at 4% v/v), 2 columns of a positive control antibiotic (the particular antibiotic and starting concentration will be organism-dependent), and 2 columns of a broth control (no bacteria). Any deviations from this layout should be noted.
