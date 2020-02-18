@@ -453,7 +453,7 @@ get_auc_plot_filename <- function(extract_name) {
   paste(extract_name, "auc_boxplot.png", sep = "_")
 }
 
-plot_extract_auc("SV1-42")
+plot_extract_auc("SV1-42") # Example
 ```
 Solid upper black line shows median AUC (luminescence over time) of each bacterium in absence of any extract. Dashed lower black line shows median AUC of broth only (no bacteria). The data sets used to calculate these control values have been limited to screening rounds in which the selected extract was tested.
 
@@ -531,7 +531,7 @@ get_auc_plot_filename <- function(extract_name) {
   paste(extract_name, "auc_boxplot.png", sep = "_")
 }
 
-plot_fraction_auc("SV1-42", 5)
+plot_fraction_auc("SV1-42", 5) # Example
 ```
 Solid upper black line shows median AUC (luminescence over time) of each bacterium in absence of any extract. Dashed lower black line shows median AUC of broth only (no bacteria). The data sets used to calculate these control values have been limited to screening rounds in which the selected extract was tested.
 
